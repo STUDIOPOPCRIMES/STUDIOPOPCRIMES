@@ -123,6 +123,39 @@
     opacity: 1;
 }
 
+.glow-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 8px 20px; /* lebih kecil */
+    font-size: 0.85rem; /* lebih kecil */
+    font-weight: 600;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    animation: pulseGlow 1.5s infinite;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.glow-button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    }
+}
+
     </style>
 </head>
 
@@ -197,13 +230,16 @@
     </section>
 
     <!-- Info Section -->
-    <section class="info-section bg-light">
-        <div class="star-divider">&#10022;</div>
-        <h2 class="text-black">CREATIVE SOLUTIONS FOR EVERY VISION.</h2>
-        <p class="my-3 text-black">From startups to established brands, we offer thoughtful design services tailored to your
-            identity, message, and audience.</p>
-        <a class="btn btn-dark mt-2" href="#">JOIN TODAY</a>
-    </section>
+<section class="info-section text-center py-5">
+    <div class="star-divider mb-3" style="font-size: 2rem; color: #fff;">&#10022;</div>
+    <h2 class="text-light">CREATIVE SOLUTIONS FOR EVERY VISION.</h2>
+    <p class="my-3 text-light">From startups to established brands, we offer thoughtful design services tailored to your
+        identity, message, and audience.</p>
+
+    <!-- Tombol kecil glow -->
+<a class="glow-button mt-2 d-inline-block" href="https://instagram.com/studiopopcrimes" target="_blank">LET’S WORK?</a>
+</section>
+
 
 <!-- Services -->
 <section class="container py-4">
@@ -254,7 +290,7 @@
         <h2 class="fw-bold text-black">DESIGN IS WHERE STRATEGY MEETS ART</h2>
         <p class="mt-2 text-black">Whether you're building a brand or showcasing your vision, we're here to bring it to life with
             purpose and creativity.</p>
-        <a class="btn btn-dark mt-3" href="#">LET'S WORK TOGETHER</a>
+        <a class="btn btn-dark mt-3" href="aboutus.html">ABOUT US</a>
     </footer>
 </body>
 
