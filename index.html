@@ -316,8 +316,8 @@
         </div>
     </section>
 
-    <!-- Info Section -->
- <section class="info-section text-center py-5">
+<!-- Info Section -->
+<section class="info-section text-center py-5">
     <div class="icon-bar mb-3">
         <img src="photoshop.png" alt="Photoshop" style="width: 40px; margin: 0 10px;">
         <img src="illustrator.png" alt="Illustrator" style="width: 40px; margin: 0 10px;">
@@ -328,10 +328,38 @@
         From startups to established brands, we offer thoughtful design services tailored to your identity,
         message, and audience.
     </p>
-    <a class="glow-button mt-2 d-inline-block" href="https://instagram.com/studiopopcrimes" target="_blank">
-        LET’S WORK?
-    </a>
 </section>
+
+<!-- Contact Form Section -->
+<section class="info-section text-center py-5" id="contact-form">
+    <div class="container">
+        <h2 class="text-white mb-3">Let's Work Together</h2>
+        <p class="text-light mb-4">Send us a message and let's make your vision a reality.</p>
+        <form action="https://formsubmit.co/studiopopcrimes@gmail.com" method="POST" class="mx-auto"
+            style="max-width: 500px;">
+            <!-- Input: Name -->
+            <input type="text" name="name" placeholder="Your Name" required
+                class="form-control mb-3 bg-white text-dark border-0" />
+
+            <!-- Input: Email -->
+            <input type="email" name="email" placeholder="Your Email" required
+                class="form-control mb-3 bg-white text-dark border-0" />
+
+            <!-- Input: Message -->
+        <textarea name="message" placeholder="What do you need help designing?" required
+            class="form-control mb-3 bg-white text-dark border-0" rows="5"></textarea>
+            
+            <!-- Anti-Spam Field -->
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thankyou.html">
+
+            <!-- Submit Button -->
+            <button type="submit" class="glow-button w-100">Send Message</button>
+        </form>
+    </div>
+</section>
+
 
     <!-- Services -->
     <section class="container py-4">
