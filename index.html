@@ -215,6 +215,28 @@
             cursor: pointer;
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
+
+        /* css slide */
+        .photo-scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.photo-scroll {
+  display: flex;
+  gap: 15px;
+}
+
+.photo-thumb {
+  height: 200px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+/* end css slide */
     </style>
 </head>
 
@@ -365,6 +387,27 @@
         </form>
     </div>
 </section>
+
+<!-- Judul -->
+<h3 class="fw-bold text-white mb-3 text-center">Some Projects I've Collaborated on with Clients</h3>
+
+<!-- Foto Slide -->
+<div class="photo-scroll-container mb-4">
+    <div class="photo-scroll d-flex">
+        <img src="foto slide 1.jpg" alt="Slide 1" class="photo-thumb">
+        <img src="foto slide 2.jpg" alt="Slide 2" class="photo-thumb">
+        <img src="foto slide 3.jpg" alt="Slide 3" class="photo-thumb">
+        <img src="foto slide 4.jpg" alt="Slide 4" class="photo-thumb">
+        <img src="foto slide 5.jpg" alt="Slide 5" class="photo-thumb">
+        <img src="foto slide 6.jpg" alt="Slide 6" class="photo-thumb">
+        <img src="foto slide 7.jpg" alt="Slide 7" class="photo-thumb">
+        <img src="foto slide 8.jpg" alt="Slide 8" class="photo-thumb">
+        <img src="foto slide 9.jpg" alt="Slide 9" class="photo-thumb">
+        <img src="foto slide 10.jpg" alt="Slide 10" class="photo-thumb">
+    </div>
+</div>
+
+
 
     <!-- Services -->
     <section class="container py-4">
